@@ -5,10 +5,10 @@
       <p class="text-white ps-3">Yapilacak Görev</p>
       <div class="d-flex align-items-center">
         <div class=" form-group mb-2 mx-1 w-100">
-          <input type="text" class="form-control p-2" id="work" name="work" [(ngModel)]="work">
+          <input type="text" class="form-control p-2 " id="work" name="work" [(ngModel)]="work">
         </div>
         <div class="form-group mb-2">
-          <button class="btn btn-primary p-2" (click)="addWork()">EKLE</button>
+          <button class="btn btn-primary p-2" (click)="addWork()" [disabled]="work.length<3">EKLE</button>
         </div>
       </div>
       <hr>
